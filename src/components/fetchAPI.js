@@ -1,56 +1,63 @@
 
-const getUser = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/user/${id}`)
-    return url
+export const getUser = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/user/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getDepartment = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/department/${id}`)
-    return url
+export const getDepartment = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/department/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getCategory = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/category/${id}`)
-    return url
+export const getCategory = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/category/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getSubcategory = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/subcategory/${id}`)
-    return url
+export const getSubcategory = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/subcategory/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getProducts = async() => {
-    let url = await fetch('https://www.palomino-bestbuyclone-proyect.xyz/api/v1/product')
-    return url
+export const getProducts = async() => {
+    let url = await fetch('https://www.palomino-bestbuyclone-proyect.xyz/api/v1/product');
+    let data = await url.json();
+    return data
 };
 
-const getProduct = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/product/${id}`)
-    return url
+export const getProduct = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/product/${id}`);
+    let data = url.json();
+    return data
 };
 
-const getReview = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/review/${id}`)
-    return url
+export const getReview = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/review/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getReviewStore = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/review-store/${id}`)
-    return url
+export const getReviewStore = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/review-store/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getStore = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/store/${id}`)
-    return url
+export const getStore = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/store/${id}`);
+    let data = await url.json();
+    return data
 };
 
-const getPurchase = async() => {
-    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/purchase/${id}`)
-    return url
+export const getPurchase = async(id) => {
+    let url = await fetch(`https://www.palomino-bestbuyclone-proyect.xyz/api/v1/purchase/${id}`);
+    let data = await url.json();
+    return data
 };
 
-export {
-    getUser, getDepartment, getCategory, getSubcategory, getProducts, 
-    getProduct, getReview, getReviewStore, getStore, getPurchase
-}
+
 

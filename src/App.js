@@ -12,9 +12,9 @@ function App() {
       <header>
       <NavigationBar/>
       </header>
-      <body>
+      <div>
       <Product/>
-      </body>
+      </div>
     </div>
   );
 }
